@@ -15,7 +15,7 @@ import { useRouter, usePathname } from 'next/navigation';
 
 export const Sidebar = () => {
   const [isHovered, setIsHovered] = useState(false);
-  const [expandedMenus, setExpandedMenus] = useState(new Set(['listings']));
+  const [expandedMenus, setExpandedMenus] = useState(new Set<string>());
   const router = useRouter();
   const pathname = usePathname();
 
@@ -113,7 +113,7 @@ export const Sidebar = () => {
                 hover:bg-gray-50 transition-colors duration-200
                 ${isHovered ? 'px-6' : 'justify-center'}
                 py-4
-                ${pathname === item.path || expandedMenus.has(item.key) ? 'text-rose-500' : 'text-gray-700'}
+                ${pathname === item.path || (item.submenu && expandedMenus.has(item.key)) ? 'text-rose-500' : 'text-gray-700'}
               `}
             >
               <span className={`text-xl ${isHovered ? 'w-6' : ''}`}>{item.icon}</span>
