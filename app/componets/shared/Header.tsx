@@ -6,7 +6,7 @@ const Header = () => {
   const [showDropdown, setShowDropdown] = useState(false);
 
   return (
-    <div className="w-full  px-4 py-4 flex items-center justify-between">
+    <div className="w-full  px-4 py-1 mb-6 flex items-center justify-between">
       <div>
         <h1 className=" font-semibold text-gray-800">Good Afternoon, Andrew!</h1>
         <small>Here Are A Few Things To Get You Started</small>
