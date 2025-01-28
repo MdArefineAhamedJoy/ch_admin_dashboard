@@ -1,5 +1,5 @@
-import Chart from "./componets/Chart";
-import Calendar from "./componets/Calander";
+import Chart from "../components/Chart";
+import Calendar from "../components/Calander";
 
 import {
   BankOutlined,

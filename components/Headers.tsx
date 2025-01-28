@@ -2,7 +2,7 @@
 import { BellOutlined, UserOutlined } from '@ant-design/icons';
 import { useState } from 'react';
 
-const Header = () => {
+const Headers = () => {
   const [showDropdown, setShowDropdown] = useState(false);
 
   return (
@@ -51,4 +51,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Headers;

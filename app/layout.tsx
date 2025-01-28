@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import 'antd/dist/reset.css';
-import { Sidebar } from './componets/shared/Sidebar';
-import Header from './componets/shared/Header';
+import Headers from '@/components/Headers';
+import { Sidebar } from '@/components/Sidebar';
 
 
 const inter = Inter({
@@ -27,7 +27,7 @@ export default function RootLayout({
         <div className="min-h-screen flex">
           <Sidebar />
           <div className="flex-1 pl-16">
-            <Header />
+            <Headers />
             <main className="bg-gray-50 min-h-[calc(100vh-4rem)]">
               {children}
             </main>
