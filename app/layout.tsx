@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import 'antd/dist/reset.css';
-import Headers from '@/components/Headers';
-import { Sidebar } from '@/components/Sidebar';
+import Headers from '@/components/sheared/Headers';
+import { Sidebar } from '@/components/sheared/Sidebar';
 
 
 const inter = Inter({
